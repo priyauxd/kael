@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
 import CompanyStep from './pages/onboarding/CompanyStep'
 import UseCaseStep from './pages/onboarding/UseCaseStep'
@@ -15,7 +15,7 @@ import SettingsPage from './pages/dashboard/SettingsPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/onboarding" element={<CompanyStep />} />
@@ -33,6 +33,6 @@ export default function App() {
           <Route path="knowledge" element={<div className="text-sm text-slate-400">Knowledge Base — coming soon</div>} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
