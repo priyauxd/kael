@@ -17,13 +17,13 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-10 md:flex">
           {['Platform', 'Agents', 'Mission Control', 'Pricing'].map(link => (
-            <a
+            <button
               key={link}
-              href={`#${link.toLowerCase().replace(/ /g, '-')}`}
+              onClick={() => document.getElementById(link.toLowerCase().replace(/ /g, '-'))?.scrollIntoView({ behavior: 'smooth' })}
               className="text-[15px] text-slate-600 dark:text-slate-400 transition hover:text-indigo-800 dark:hover:text-white"
             >
               {link}
-            </a>
+            </button>
           ))}
         </div>
 
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-[#0F0E1A] px-6 pb-6 md:hidden">
           <div className="flex flex-col gap-5 pt-5">
             {['Platform', 'Agents', 'Mission Control', 'Pricing'].map(link => (
-              <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} onClick={() => setOpen(false)} className="text-[15px] text-slate-600 dark:text-slate-400">{link}</a>
+              <button key={link} onClick={() => { setOpen(false); document.getElementById(link.toLowerCase().replace(/ /g, '-'))?.scrollIntoView({ behavior: 'smooth' }) }} className="text-left text-[15px] text-slate-600 dark:text-slate-400">{link}</button>
             ))}
             <div className="flex items-center gap-5 pt-3">
               <a href="#" className="text-[15px] text-slate-600 dark:text-slate-400">Log In</a>

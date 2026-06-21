@@ -68,7 +68,7 @@ export default function DashboardLayout() {
 
           {collapsed ? (
             <div className="flex flex-col items-center gap-2">
-              <img src="/kael-logo.png" alt="Kael" className="h-8" />
+              <img src={import.meta.env.BASE_URL + 'kael-logo.png'} alt="Kael" className="h-8" />
               <span className="text-[8px] font-bold uppercase tracking-[0.15em] text-violet-500/70 dark:text-violet-400/60">MC</span>
             </div>
           ) : (

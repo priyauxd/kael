@@ -100,9 +100,9 @@ export default function HeroSection() {
           <a href="#" className="rounded-full bg-violet-500 px-8 py-3.5 text-[15px] font-medium text-white transition hover:bg-violet-600">
             Book a Demo
           </a>
-          <a href="#mission-control" className="rounded-full border border-white/15 px-8 py-3.5 text-[15px] font-medium text-white/90 transition hover:border-white/30 hover:text-white">
+          <button onClick={() => document.getElementById('mission-control')?.scrollIntoView({ behavior: 'smooth' })} className="rounded-full border border-white/15 px-8 py-3.5 text-[15px] font-medium text-white/90 transition hover:border-white/30 hover:text-white">
             See Mission Control
-          </a>
+          </button>
         </motion.div>
 
         <motion.div
