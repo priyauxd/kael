@@ -1,7 +1,9 @@
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import LogoBar from '../components/LogoBar'
+import ProblemSection from '../components/ProblemSection'
 import PlatformSection from '../components/PlatformSection'
+import WhyKaelSection from '../components/WhyKaelSection'
 import QuoteSection from '../components/QuoteSection'
 import HowItWorksSection from '../components/HowItWorksSection'
 import MissionControlSection from '../components/MissionControlSection'
@@ -16,7 +18,9 @@ export default function LandingPage() {
       <main>
         <HeroSection />
         <LogoBar />
+        <ProblemSection />
         <PlatformSection />
+        <WhyKaelSection />
         <QuoteSection />
         <HowItWorksSection />
         <MissionControlSection />
